@@ -1,0 +1,26 @@
+.table {
+  width: 563px;
+  box-sizing: content-box;
+  margin: 20px auto;
+  background-color: rgb(255, 245, 233);
+}
+
+.head {
+  font-size: 24px;
+  text-align: center;
+}
+
+.item {
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid grey;
+  padding: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: rgb(191, 255, 234);
+  transform: scale(1.1);
+  border-radius: 10px;
+}

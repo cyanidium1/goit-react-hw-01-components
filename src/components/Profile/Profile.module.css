@@ -1,0 +1,26 @@
+.profile {
+    padding: 20px;
+    margin: 20px auto;
+    width: fit-content;
+    background-color: rgb(255, 245, 233);
+    border-radius: 30px;
+}
+.desc {
+    display: flex;
+    flex-direction: row;
+}
+.ava {
+    margin-right: 40px;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.profDesc {
+    margin-top: 0;
+    font-size: 24px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 30px;
+}

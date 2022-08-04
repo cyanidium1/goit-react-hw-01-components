@@ -1,0 +1,33 @@
+.stts {
+  margin: 20px auto;
+  width: fit-content;
+  background-color: rgb(255, 245, 233);
+}
+
+.title {
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 550px;
+}
+
+.item {
+  background-color: rgb(214, 214, 214);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.item:nth-child(2n + 1) {
+  background-color: rgb(187, 187, 187);
+}
+
+.item:hover {
+  background-color: rgb(191, 255, 234);
+  transform: scale(1.2);
+  color: rgb(31, 31, 31);
+}
