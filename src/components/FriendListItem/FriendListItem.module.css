@@ -1,0 +1,25 @@
+.item {
+  margin: 20px;
+  border-radius: 20px;
+  padding: 8px;
+  background-color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.item:hover {
+  background-color: rgb(191, 255, 234);
+  transform: scale(1.1);
+}
+.online {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 255, 0);
+}
+
+.offline {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 0, 0);
+}

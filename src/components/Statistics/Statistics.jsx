@@ -26,7 +26,7 @@ function Statistics({ data }) {
 }
 
 Statistics.propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default Statistics;

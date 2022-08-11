@@ -1,7 +1,7 @@
 import css from './Transactions.module.css';
 import PropTypes from 'prop-types';
 
-function Transactions({ trs }) {
+function Transactions({ transactions }) {
   return (
     <table className={css.table}>
       <thead className={css.head}>
@@ -13,7 +13,7 @@ function Transactions({ trs }) {
       </thead>
 
       <tbody>
-        {trs.map(el => (
+        {transactions.map(el => (
           <tr key={el.id}>
             <td className={css.item}>{el.type}</td>
             <td className={css.item}>{el.amount}</td>
@@ -26,7 +26,7 @@ function Transactions({ trs }) {
 }
 
 Transactions.propTypes = {
-  trs: PropTypes.array,
+  transactions: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default Transactions;
