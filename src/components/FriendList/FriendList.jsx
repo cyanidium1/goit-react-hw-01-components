@@ -3,13 +3,17 @@ import PropTypes from 'prop-types';
 import FriendListItem from 'components/FriendListItem/FriendListItem';
 
 function FriendList({ friends }) {
-  const elements = friends.map(el => <FriendListItem item={el} />);
-
-  return <ul className={css.list}>{elements}</ul>;
+  return (
+    <ul className={css.list}>
+      {friends.map(el => (
+        <FriendListItem item={el} key={el.id} />
+      ))}
+    </ul>
+  );
 }
 
 FriendList.propTypes = {
-  friends: PropTypes.array,
+  friends: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default FriendList;

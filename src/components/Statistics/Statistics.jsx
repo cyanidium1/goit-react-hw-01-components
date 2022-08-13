@@ -2,6 +2,7 @@ import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
 function Statistics({ data }) {
+  console.log(data[0].id);
   return (
     <section className={css.stts}>
       {data.length === 0 ? (
